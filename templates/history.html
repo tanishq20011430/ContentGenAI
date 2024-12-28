@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation History</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generation History</h1>
+            <nav>
+                <a href="/" class="active">Generate</a>
+                <a href="history">History</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="analytics-section">
+                <h2>Analytics</h2>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>Total Generations</h3>
+                        <p id="totalGenerations">Loading...</p> <!-- Placeholder text will be updated -->
+                        <canvas id="totalGenerationsChart" width="400" height="200"></canvas> <!-- Chart -->
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Average Word Count</h3>
+                        <p id="averageWordCount">Loading...</p> <!-- Placeholder text will be updated -->
+                        <canvas id="averageWordCountChart" width="400" height="200"></canvas> <!-- Chart -->
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Average Keywords</h3>
+                        <p id="averageKeywords">Loading...</p> <!-- Placeholder text will be updated -->
+                        <canvas id="averageKeywordsChart" width="400" height="200"></canvas> <!-- Chart -->
+                    </div>
+                </div>
+                <div class="timeline-chart">
+                    <h3>Generation Timeline</h3>
+                    <div id="timeline"></div> <!-- Timeline will be dynamically populated -->
+                </div>
+            </div>
+
+            <div class="history-list">
+                <h2>Recent Generations</h2>
+                <div id="history-container">
+                    <p>Loading history...</p>
+                    <a href="/content_history.json">History</a> <!-- Placeholder text for history will be updated -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script> <!-- Custom script for data population -->
+</body>
+</html>

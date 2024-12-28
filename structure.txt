@@ -1,0 +1,40 @@
+project/
+├── api/
+│   ├── __init__.py
+│─   ├── auth_routes.py
+│   ├── error_handlers.py
+│   └── routes.py
+├── config/
+│   ├── __init__.py
+│   └── settings.py
+├─ core/
+│   ├── __init__.py
+│   ├── exceptions.py
+│   └── logging_config.py
+├── data/
+├── migrations/ 
+├── models/
+│   ├── __init__.py
+│   └── user_model.py
+└── services/
+│   ├── __init__.py
+│   ├── auth_manager.py
+│   ├── content_generator.py
+│   ├── history_manager.py
+│   ── web_scraper.py
+├── static/
+│   ├── JS
+│   │   └── script.js
+│   └── style.css
+├── templates/
+│   ├── dashboard.html
+│   ├── history.html
+│   ├── index.html
+│   ├── login.html
+│   └── register.html
+├── .env
+├── app.log
+├── app.py
+├── content_history.json
+├── requirements.txt
+└── structure.txt

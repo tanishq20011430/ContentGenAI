@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Content Generator</h1>
+            <nav>
+                <a href="/" class="active">Generate</a> <!-- Home link updated -->
+                <a href="history">History</a> <!-- Updated to match the history page route -->
+            </nav>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>Generate New Content</h2>
+                <form id="generateForm">
+                    <div class="form-group">
+                        <label for="url">Website URL:</label>
+                        <input type="url" id="url" name="url" required 
+                               placeholder="Enter website URL">
+                    </div>
+                    <button type="submit" class="btn">Generate Content</button>
+                </form>
+            </div>
+
+            <div class="results-section" style="display: none;">
+                <h2>Generated Content</h2>
+                <div class="keywords-box">
+                    <h3>Keywords</h3>
+                    <div id="keywords" class="keywords-list"></div>
+                </div>
+                <div class="content-box">
+                    <h3>Content</h3>
+                    <div id="generatedContent"></div>
+                </div>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Generating content...</p>
+            </div>
+
+            <div id="error" class="error" style="display: none;"></div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
