@@ -1,9 +1,8 @@
-Project Name
-This is a content generation Flask application.
+# This is a content generation Flask application.
 Description
-This Flask application takes a URL as input, scrapes the content from the webpage, extracts keywords, and generates a new article based on those keywords using Google Generative AI.
+## This Flask application takes a URL as input, scrapes the content from the webpage, extracts keywords, and generates a new article based on those keywords using Google Generative AI.
 
-Features
+## Features
 Scrape content from webpages
 Extract keywords from scraped content
 Generate new content based on keywords using Google Generative AI
@@ -49,4 +48,4 @@ We welcome contributions to this project. Please see the CONTRIBUTING.md file fo
 
 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+### This project is licensed under the MIT License. See the LICENSE file for details.
